@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhiteBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp"
+        tools:context=".MenuActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="42dp"
+            android:text="@string/_2048"
+            android:textColor="@color/textBrown"
+            android:textSize="96sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/classic_play_button"
+            style="@style/optionsButtonTile"
+            android:background="@drawable/title_background"
+            android:onClick="onClassicButtonClicked"
+            android:text="@string/classic_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/classic_play"
+            android:elevation="2dp"
+            android:src="@drawable/ic_grid_white"
+            app:layout_constraintBottom_toBottomOf="@+id/classic_play_button"
+            app:layout_constraintStart_toStartOf="@+id/classic_play_button"
+            app:layout_constraintTop_toTopOf="@+id/classic_play_button" />
+
+        <TextView
+            android:id="@+id/time_trial_button"
+            style="@style/optionsButtonTile"
+            android:background="@drawable/bg_button_red"
+            android:onClick="onTimeTrialClicked"
+            android:text="@string/time_trial"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classic_play_button" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/time_trial"
+            android:elevation="2dp"
+            android:src="@drawable/ic_clock_white_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/time_trial_button"
+            app:layout_constraintStart_toStartOf="@+id/time_trial_button"
+            app:layout_constraintTop_toTopOf="@+id/time_trial_button" />
+
+        <TextView
+            android:id="@+id/statistics_button"
+            style="@style/optionsButtonTile"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_button_blue"
+            android:onClick="onStatisticsClicked"
+            android:text="@string/statistics"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_trial_button" />
+
+        <TextView
+            android:id="@+id/sounds_button"
+            style="@style/optionsButtonTile"
+            android:background="@drawable/bg_button_blue"
+            android:onClick="onSoundsClicked"
+            android:text="@string/sounds_on"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_button" />
+
+        <TextView
+            android:id="@+id/undo_enable_button"
+            style="@style/optionsButtonTile"
+            android:background="@drawable/bg_button_blue"
+            android:onClick="onUndoClicked"
+            android:text="@string/undo_on"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sounds_button" />
+
+        <TextView
+            android:id="@+id/swipe_anywhere_button"
+            style="@style/optionsButtonTile"
+            android:background="@drawable/bg_button_blue"
+            android:onClick="onSwipeAnywhereClicked"
+            android:text="@string/swipe_anywhere_off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/undo_enable_button" />
+
+        <TextView
+            android:id="@+id/how_to_play"
+            style="@style/optionsButtonTile"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_button_tan"
+            android:onClick="onHowToPlayClicked"
+            android:text="@string/how_to_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swipe_anywhere_button" />
+
+        <TextView
+            android:id="@+id/about_button"
+            style="@style/optionsButtonTile"
+            android:background="@drawable/bg_button_tan"
+            android:onClick="onAboutClicked"
+            android:text="@string/about_2048"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_play" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

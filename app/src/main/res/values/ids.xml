@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="numbered_tile_0_0" type="id"/>
+    <item name="numbered_tile_0_1" type="id"/>
+    <item name="numbered_tile_0_2" type="id"/>
+    <item name="numbered_tile_0_3" type="id"/>
+    <item name="numbered_tile_1_0" type="id"/>
+    <item name="numbered_tile_1_1" type="id"/>
+    <item name="numbered_tile_1_2" type="id"/>
+    <item name="numbered_tile_1_3" type="id"/>
+    <item name="numbered_tile_2_0" type="id"/>
+    <item name="numbered_tile_2_1" type="id"/>
+    <item name="numbered_tile_2_2" type="id"/>
+    <item name="numbered_tile_2_3" type="id"/>
+    <item name="numbered_tile_3_0" type="id"/>
+    <item name="numbered_tile_3_1" type="id"/>
+    <item name="numbered_tile_3_2" type="id"/>
+    <item name="numbered_tile_3_3" type="id"/>
+</resources>
