@@ -19,7 +19,7 @@
         android:background="@drawable/title_background"
         android:gravity="center"
         android:padding="6dp"
-        android:text="@string/_2048"
+        android:text="2048 HOME"
         android:textAlignment="center"
         android:textColor="@color/offWhiteText"
         android:textSize="36sp"
@@ -454,7 +454,7 @@
         android:textColor="@color/tanTile"
         tools:text="0:00" />
 
-    
+
 
 
 
