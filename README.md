@@ -1,4 +1,9 @@
 # 2048
+[![APK](https://img.shields.io/badge/download-APK-E53935.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/2048.apk?raw=true)
+[![Min sdk](https://img.shields.io/badge/platform-Android-00E676.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/build.gradle)
+[![Min sdk](https://img.shields.io/badge/minsdk-21-yellow.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/build.gradle)
+[![Language](https://img.shields.io/badge/language-kotlin-orange.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/build.gradle)
+[![License](https://img.shields.io/apm/l/vim-mode)](https://github.com/carolinemusyoka/2048TheGame/blob/master/LICENSE)
 
 A classic mobile version 2048 game   
 2048 game written for Android in Kotlin. Based on @gabrielecirulli`s web app (https://github.com/gabrielecirulli/2048)
