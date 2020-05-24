@@ -1,4 +1,5 @@
 # 2048
+[![APK](https://img.shields.io/badge/download-APK-E53935.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/2048.apk?raw=true)
 [![Min sdk](https://img.shields.io/badge/platform-Android-00E676.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/build.gradle)
 [![Min sdk](https://img.shields.io/badge/minsdk-21-yellow.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/build.gradle)
 [![Language](https://img.shields.io/badge/language-kotlin-orange.svg)](https://github.com/carolinemusyoka/2048TheGame/blob/master/app/build.gradle)
