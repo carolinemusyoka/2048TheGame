@@ -3,6 +3,7 @@ package com.carol.project2048
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
+import kotlin.math.abs
 
 class TileTouchListener(private val mainActivity: MainActivity) : View.OnTouchListener {
     private var startX = 0f
@@ -43,9 +44,10 @@ class TileTouchListener(private val mainActivity: MainActivity) : View.OnTouchLi
                 val dx = motionEvent.x - startX
                 val dy = motionEvent.y - startY
 
-                if (!swipedAlready && (Math.abs(dx) > minimumRegisteredDistance || Math.abs(dy) > minimumRegisteredDistance)) {
-                    val movedSomething = if (Math.abs(dx) > Math.abs(dy)) {
-                        if (dx > 0) {
+                if (!swipedAlready && (abs(dx) > minimumRegisteredDistance || abs(dy) > minimumRegisteredDistance)) {
+                    val movedSomething: Unit
+                    if (abs(dx) > abs(dy)) {
+                        movedSomething = if (dx > 0) {
                             Log.v("Input", "swiped right")
                             mainActivity.move(RIGHT)
                         } else {
@@ -53,7 +55,7 @@ class TileTouchListener(private val mainActivity: MainActivity) : View.OnTouchLi
                             mainActivity.move(LEFT)
                         }
                     } else {
-                        if (dy > 0) {
+                        movedSomething = if (dy > 0) {
                             Log.v("Input", "swiped down")
                             mainActivity.move(DOWN)
                         } else {

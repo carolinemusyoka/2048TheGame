@@ -12,13 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".HowToPlayActivity" />
-        <activity android:name=".InfoActivity" />
-        <activity android:name=".StatisticsActivity" />
-        <activity android:name=".MenuActivity" />
+        <activity android:name=".AboutActivity" >
+
+        </activity>
+        <activity android:name=".HowToPlayActivity" >
+
+        </activity>
+        <activity android:name=".InfoActivity" >
+
+        </activity>
+        <activity android:name=".StatisticsActivity" >
+
+        </activity>
+        <activity android:name=".MenuActivity" >
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

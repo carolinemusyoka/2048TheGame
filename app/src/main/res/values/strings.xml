@@ -61,4 +61,5 @@
     <string name="about_p0">This is an unofficial mobile version of 2048, created by Carol Musyoka.</string>
     <string name="classic_play_or_time_trial">Classic play or Time trial</string>
     <string name="about_p1">Don\'t hesitate in Time trial play. The tiles won\'t wait for your move before they appear. Survive as long as you can. The game is over when the board fills up!</string>
+    <string name="uses_open_source_assets_by_qat_vitriolix_breviceps_qubodup_and_kwahmah_02_from_freesound_org">Uses open-source assets by Qat, vitriolix, Breviceps, qubodup, and kwahmah_02 from freesound.org.</string>
 </resources>

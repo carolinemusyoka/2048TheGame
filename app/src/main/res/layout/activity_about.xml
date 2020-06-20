@@ -89,7 +89,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Uses open-source assets by Qat, vitriolix, Breviceps, qubodup, and kwahmah_02 from freesound.org."
+            android:text="@string/uses_open_source_assets_by_qat_vitriolix_breviceps_qubodup_and_kwahmah_02_from_freesound_org"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
