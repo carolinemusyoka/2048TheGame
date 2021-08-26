@@ -1,10 +1,8 @@
-package com.carol.project2048
+package com.carol.project2048.activities
 
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.carol.project2048.BoringActivity
 import com.carol.project2048.R
 import kotlinx.android.synthetic.main.activity_about.*
 

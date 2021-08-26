@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.activities
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -27,6 +27,7 @@ import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.app.ActivityCompat
+import com.carol.project2048.*
 import com.carol.project2048.StateHandler.continuingGame
 import com.carol.project2048.StateHandler.currentState
 import com.carol.project2048.StateHandler.grid
@@ -37,6 +38,7 @@ import com.carol.project2048.StateHandler.updateState
 import com.carol.project2048.StateHandler.updateToMatchState
 import com.carol.project2048.StateHandler.won
 import com.carol.project2048.TimerHandler.startTimer
+import com.carol.project2048.activities.StatisticsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

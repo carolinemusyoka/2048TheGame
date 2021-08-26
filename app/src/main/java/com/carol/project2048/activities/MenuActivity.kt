@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.activities
 
 
 
@@ -7,9 +7,10 @@ import android.content.SharedPreferences
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.preference.PreferenceManager
-import androidx.core.content.ContextCompat
-import androidx.appcompat.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.carol.project2048.R
 import kotlinx.android.synthetic.main.activity_menu.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
