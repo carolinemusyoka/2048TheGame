@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -11,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.carol.project2048.R
+import com.carol.project2048.Stats
 import kotlinx.android.synthetic.main.activity_statistics.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

@@ -13,16 +13,16 @@
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
 
-        <activity android:name=".AboutActivity" >
+        <activity android:name=".activities.AboutActivity" >
 
         </activity>
-        <activity android:name=".HowToPlayActivity" >
+        <activity android:name=".activities.HowToPlayActivity" >
 
         </activity>
-        <activity android:name=".InfoActivity" >
+        <activity android:name=".activities.InfoActivity" >
 
         </activity>
-        <activity android:name=".StatisticsActivity" >
+        <activity android:name=".activities.StatisticsActivity" >
 
         </activity>
         <activity android:name=".MenuActivity" >

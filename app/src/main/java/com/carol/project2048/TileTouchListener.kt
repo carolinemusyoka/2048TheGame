@@ -3,6 +3,7 @@ package com.carol.project2048
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
+import com.carol.project2048.activities.MainActivity
 import kotlin.math.abs
 
 class TileTouchListener(private val mainActivity: MainActivity) : View.OnTouchListener {

@@ -1,7 +1,7 @@
-package com.carol.project2048
+package com.carol.project2048.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.carol.project2048.R
 
 class InfoActivity : BoringActivity() {
 

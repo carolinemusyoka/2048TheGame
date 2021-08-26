@@ -1,14 +1,12 @@
-package com.carol.project2048
+package com.carol.project2048.activities
 
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.preference.PreferenceManager
-import androidx.core.content.ContextCompat
-import androidx.appcompat.app.AppCompatActivity
 import android.view.View
-import com.carol.project2048.hideSystemUI
-import com.carol.project2048.SOUND_ENABLED
-import com.carol.project2048.get
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.carol.project2048.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
