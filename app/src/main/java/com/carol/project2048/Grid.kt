@@ -90,7 +90,7 @@ data class Grid(val size: Int): Iterable<Tile?>, Serializable {
     }
 
     fun maxVal(): Int{
-        return maxBy { it?.value ?: 0 }!!.value
+        return maxByOrNull { it?.value ?: 0 }!!.value
     }
 
 }
