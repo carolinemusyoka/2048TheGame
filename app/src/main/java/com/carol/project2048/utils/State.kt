@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.utils
 
 
 import java.io.Serializable
@@ -10,7 +10,7 @@ data class State(val grid: Grid, val moveCount: Int = 0, val score: Int = 0, val
     constructor(state: State, time: Long) : this(state.grid.copy(), state.moveCount, state.score, state.bestScore,
         state.gameOver, state.won, state.continuingGame, time)
 
-    fun copy(): State{
+    fun copy(): State {
         return State(grid.copy(), moveCount, score, bestScore, gameOver, won, continuingGame, time)
     }
 }

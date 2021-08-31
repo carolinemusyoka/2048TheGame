@@ -1,8 +1,11 @@
-apply plugin: 'com.android.application'
+plugins{
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-android-extensions'
+}
 
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
@@ -40,6 +43,19 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'com.google.android.material:material:1.4.0'
+
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    //testing navigation
+    def nav_version = "2.3.5"
+
+    androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
+    debugImplementation("androidx.fragment:fragment-testing:1.4.0-alpha07")
+    debugImplementation("androidx.fragment:fragment-ktx:1.4.0-alpha07")
+
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

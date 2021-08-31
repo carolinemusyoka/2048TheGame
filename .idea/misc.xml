@@ -15,12 +15,14 @@
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/drawable/tile_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/drawable/title_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_about.xml" value="0.209375" />
+        <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_how_to_play.xml" value="0.209375" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_info.xml" value="0.209375" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_menu.xml" value="0.209375" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_statistics.xml" value="0.209375" />
         <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_stats.xml" value="0.209375" />
+        <entry key="..\:/Carol/projects/2048TheGame/app/src/main/res/layout/activity_tile.xml" value="0.19202898550724637" />
       </map>
     </option>
   </component>
