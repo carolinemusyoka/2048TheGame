@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.utils
 
 import android.os.Handler
 import java.util.*

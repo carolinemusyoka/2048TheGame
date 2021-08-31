@@ -1,12 +1,12 @@
-package com.carol.project2048
+package com.carol.project2048.utils
 
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
-import com.carol.project2048.activities.MainActivity
+import com.carol.project2048.activities.HomeActivity
 import kotlin.math.abs
 
-class TileTouchListener(private val mainActivity: MainActivity) : View.OnTouchListener {
+class TileTouchListener(private val mainActivity: HomeActivity) : View.OnTouchListener {
     private var startX = 0f
     private var startY = 0f
     private var swipedAlready = false
@@ -28,9 +28,8 @@ class TileTouchListener(private val mainActivity: MainActivity) : View.OnTouchLi
      * @return True if the listener has consumed the motionEvent, false otherwise.
      */
     override fun onTouch(v: View, motionEvent: MotionEvent): Boolean {
-        val action = motionEvent.action
 
-        return when (action) {
+        return when (motionEvent.action) {
             MotionEvent.ACTION_UP -> {
                 swipedAlready = false
                 true

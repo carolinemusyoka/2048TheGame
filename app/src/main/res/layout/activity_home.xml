@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/full_page"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhiteBackground"
+    tools:context=".activities.HomeActivity">
+
+    <ImageButton
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:elevation="12dp"
+        android:background="@drawable/title_background"
+        android:gravity="center"
+        android:padding="6dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/score_box"
+        app:layout_constraintStart_toStartOf="@id/game_container"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="openMenu"/>
+
+
+    <TextView
+        android:id="@+id/score_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="12dp"
+        android:background="@drawable/score_background"
+        android:onClick="viewStats"
+        app:layout_constraintBottom_toTopOf="@id/new_game_button"
+        app:layout_constraintEnd_toStartOf="@id/best_score_box"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+    <TextView
+        android:id="@+id/score_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="14dp"
+        android:paddingTop="4dp"
+        android:text="@string/score"
+        android:textAlignment="center"
+        android:textColor="@color/offWhiteText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/score_box"
+        app:layout_constraintStart_toStartOf="@id/score_box"
+        app:layout_constraintTop_toTopOf="@id/score_box" />
+
+    <TextView
+        android:id="@+id/score_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/score_title"
+        app:layout_constraintBottom_toBottomOf="@id/score_box"
+        app:layout_constraintEnd_toEndOf="@id/score_box"
+        app:layout_constraintStart_toStartOf="@id/score_box"
+        android:elevation="14dp"
+        android:paddingBottom="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/default_score" />
+
+    <TextView
+        android:id="@+id/new_game_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:elevation="12dp"
+        android:background="@drawable/bg_button_red"
+        android:onClick="promptNewGame"
+        android:padding="4dp"
+        android:text="@string/new_game"
+        android:textAlignment="center"
+        android:textColor="@color/offWhiteText"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/main_instructions"
+        app:layout_constraintEnd_toStartOf="@id/undo_button"
+        app:layout_constraintStart_toStartOf="@+id/score_box"
+        app:layout_constraintTop_toBottomOf="@id/score_box" />
+
+
+    <TextView
+        android:id="@+id/best_score_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:elevation="12dp"
+        android:background="@drawable/score_background"
+        app:layout_constraintBottom_toBottomOf="@id/score_box"
+        app:layout_constraintEnd_toEndOf="@+id/game_container"
+        app:layout_constraintStart_toEndOf="@id/score_box"
+        app:layout_constraintTop_toTopOf="@id/title"
+        android:onClick="viewStats"/>
+
+    <TextView
+        android:id="@+id/best_score_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="14dp"
+        android:paddingTop="4dp"
+        android:text="@string/best"
+        android:textAlignment="center"
+        android:textColor="@color/offWhiteText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/best_score_box"
+        app:layout_constraintStart_toStartOf="@id/best_score_box"
+        app:layout_constraintTop_toTopOf="@id/best_score_box" />
+
+    <TextView
+        android:id="@+id/best_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="14dp"
+        android:paddingBottom="8dp"
+        android:text="@string/default_score"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/best_score_title"
+        app:layout_constraintBottom_toBottomOf="@id/best_score_box"
+        app:layout_constraintEnd_toEndOf="@+id/best_score_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/best_score_box" />
+
+    <TextView
+        android:id="@+id/undo_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="10dp"
+        android:elevation="12dp"
+        android:background="@drawable/bg_button_red"
+        android:padding="4dp"
+        android:text="@string/undo"
+        android:textAlignment="center"
+        android:textColor="@color/offWhiteText"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/main_instructions"
+        app:layout_constraintEnd_toEndOf="@+id/game_container"
+        app:layout_constraintStart_toEndOf="@id/new_game_button"
+        app:layout_constraintTop_toBottomOf="@id/best_score_box"
+        android:onClick="undo"/>
+
+
+    <TextView
+        android:id="@+id/main_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="20dp"
+        android:text="@string/main_instructions"
+        android:textAlignment="center"
+        android:textColor="@color/tanBackground"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/touch_receiver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="@id/game_container"
+        app:layout_constraintEnd_toEndOf="@id/game_container"
+        app:layout_constraintTop_toTopOf="@id/game_container"
+        app:layout_constraintBottom_toBottomOf="@id/game_container"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        tools:ignore="ContentDescription"
+        android:id="@+id/game_container"
+        style="@style/gameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_instructions">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintGuide_percent="0.75" />
+
+
+        <!--<include layout="@layout/tile"/>-->
+
+        <ImageView
+            android:id="@+id/tile_0_0"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <ImageView
+            android:id="@+id/tile_0_1"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tile_0_2"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tile_0_3"
+            style="@style/tile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/tile_1_0"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tile_0_0" />
+
+        <ImageView
+            android:id="@+id/tile_1_1"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+            app:layout_constraintTop_toBottomOf="@id/tile_0_0" />
+
+        <ImageView
+            android:id="@+id/tile_1_2"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintTop_toBottomOf="@id/tile_0_0" />
+
+        <ImageView
+            android:id="@+id/tile_1_3"
+            style="@style/tile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintTop_toBottomOf="@id/tile_0_0" />
+
+        <ImageView
+            android:id="@+id/tile_2_0"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tile_1_0" />
+
+        <ImageView
+            android:id="@+id/tile_2_1"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+            app:layout_constraintTop_toBottomOf="@id/tile_1_0" />
+
+        <ImageView
+            android:id="@+id/tile_2_2"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintTop_toBottomOf="@id/tile_1_0" />
+
+        <ImageView
+            android:id="@+id/tile_2_3"
+            style="@style/tile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintTop_toBottomOf="@id/tile_1_0" />
+
+        <ImageView
+            android:id="@+id/tile_3_0"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tile_2_0" />
+
+        <ImageView
+            android:id="@+id/tile_3_1"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintStart_toEndOf="@id/guideline_vertical_left"
+            app:layout_constraintTop_toBottomOf="@id/tile_2_0" />
+
+        <ImageView
+            android:id="@+id/tile_3_2"
+            style="@style/tile"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_middle"
+            app:layout_constraintTop_toBottomOf="@id/tile_2_0" />
+
+        <ImageView
+            android:id="@+id/tile_3_3"
+            style="@style/tile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_right"
+            app:layout_constraintTop_toBottomOf="@id/tile_2_0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="100dp"
+            android:background="@color/transparentYellow"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/textBrown"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Game over!" />
+
+            <Button
+                android:id="@+id/keep_going_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@id/try_again_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/message"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="@string/keep_going"
+                android:onClick="keepGoing"/>
+
+            <Button
+                android:id="@+id/try_again_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@id/share_button"
+                app:layout_constraintStart_toEndOf="@id/keep_going_button"
+                app:layout_constraintTop_toBottomOf="@+id/message"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="@string/try_again"
+                android:onClick="tryAgain"/>
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/try_again_button"
+                app:layout_constraintTop_toBottomOf="@+id/message"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:text="@string/share"
+                android:onClick="share"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/move_count_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/game_container"
+        app:layout_constraintTop_toBottomOf="@id/game_container"
+        android:textStyle="bold"
+        android:textColor="@color/tanTile"
+        tools:text="0 moves" />
+
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/game_container"
+        app:layout_constraintTop_toBottomOf="@id/game_container"
+        android:textStyle="bold"
+        android:textColor="@color/tanTile"
+        tools:text="0:00" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

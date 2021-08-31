@@ -1,7 +1,6 @@
-package com.carol.project2048
+package com.carol.project2048.utils
 
 import android.content.Context
-import android.util.Log
 import java.io.*
 
 object Stats : Serializable {

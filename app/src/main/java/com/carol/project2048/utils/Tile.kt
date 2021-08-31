@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.utils
 
 import android.widget.TextView
 import java.io.Serializable
@@ -8,7 +8,7 @@ data class Tile(var pos: Pos, var value: Int = 0): Serializable{
     var mergedFrom: Pair<Tile, Tile>? = null
     @Transient var textView: TextView? = null
 
-    fun copy(): Tile{
+    fun copy(): Tile {
         val t = Tile(pos.copy(), value)
 //        t.previousPos = previousPos
         mergedFrom?.let {

@@ -12,7 +12,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.carol.project2048.R
-import com.carol.project2048.Stats
+import com.carol.project2048.utils.Stats
 import kotlinx.android.synthetic.main.activity_statistics.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

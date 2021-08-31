@@ -1,4 +1,4 @@
-package com.carol.project2048
+package com.carol.project2048.utils
 
 import java.io.Serializable
 import java.util.*
@@ -12,7 +12,7 @@ data class Grid(val size: Int): Iterable<Tile?>, Serializable {
         tileGrid = Array(size) { i -> Array(size){ j -> other.tileGrid[i][j]?.copy()}}
     }
 
-    fun copy(): Grid{
+    fun copy(): Grid {
         return Grid(this)
     }
 
